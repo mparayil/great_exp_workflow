@@ -1,0 +1,21 @@
+.git
+.env
+**.DS_Store
+.python-version
+Pipfile
+Pipfile.lock
+airflow_settings.yaml
+
+# Byte-compiled / optimized / DLL files
+**__pycache__
+.idea/
+
+# config credentials
+include/great_expectations/uncommitted/*
+!include/great_expectations/uncommitted/.gitkeep
+
+# Jupiter notebook related
+.ipynb_checkpoints
+
+# temp data
+include/great_expectations/temp/

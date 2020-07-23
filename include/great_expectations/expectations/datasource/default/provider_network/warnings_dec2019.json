@@ -1,0 +1,574 @@
+{
+  "data_asset_name": "datasource/default/provider_network",
+  "expectation_suite_name": "warnings_dec2019",
+  "meta": {
+	"great_expectations.__version__": "0.8.8"
+  },
+  "expectations": [
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "CASE_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "TASK_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_ADDRESS_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_CATEGORY"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_CANDIDATE_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "DISPATCH_RESPONSE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "DISPATCH_RESPONSE_REASON"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "DISPATCH_TYPE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ENROUTE_MILES"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SERVICE_TIME_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SERVICE_TIME_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "DISPATCH_REQUEST_TIME_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "DISPATCH_REQUEST_TIME_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_NAME"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_ADDRESS_1"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_ADDRESS_2"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_ZIP"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_PHONE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_FAX"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ETA_MINUTES"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "TOTAL_ETA_EXTENSION_MINUTES"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "TOTAL_ETA_EXTENSION_COUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "IS_DISPATCHED_PROVIDER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "CASE_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "TASK_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "PROVIDER_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "PROVIDER_ADDRESS_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "PROVIDER_CANDIDATE_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "DISPATCH_RESPONSE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "DISPATCH_RESPONSE_REASON"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "DISPATCH_TYPE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SERVICE_TIME_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SERVICE_TIME_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "DISPATCH_REQUEST_TIME_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "DISPATCH_REQUEST_TIME_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "TOTAL_ETA_EXTENSION_MINUTES"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "TOTAL_ETA_EXTENSION_COUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "IS_DISPATCHED_PROVIDER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ETA_MINUTES",
+		"mostly": 0.47
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "PROVIDER_CATEGORY",
+		"mostly": 0.94
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ENROUTE_MILES",
+		"mostly": 0.91
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "PROVIDER_CATEGORY",
+		"value_set": [
+		  "AA",
+		  "BST",
+		  "D",
+		  "DLROWN",
+		  "DP",
+		  "MT",
+		  "TA",
+		  "TA0",
+		  "TA01",
+		  "TA2",
+		  "TA3",
+		  "TP",
+		  "UNLISTED SERVICE PROVIDER",
+		  "ZPP",
+		  "ZPS"
+		],
+		"mostly": 0.8
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "DISPATCH_RESPONSE_REASON",
+		"value_set": [
+		  "Available",
+		  "Can Not Assist - Dealership Currently Closed",
+		  "Can not cross state lines",
+		  "Can not transport customers",
+		  "Code Black",
+		  "Customer Cancel",
+		  "Customer Rejected",
+		  "Customer Requested a Different Dealer",
+		  "Do not accept customers form of payment",
+		  "Do not have the proper equipment at this time",
+		  "ETA Issues",
+		  "ETA Issues-General",
+		  "Equipment not in Fleet",
+		  "Hold by Customer",
+		  "No longer offer that service",
+		  "Other",
+		  "Out of My Coverage Area",
+		  "Phone Busy",
+		  "Phone-Hold time over 1 min",
+		  "Phone-No Answer",
+		  "Phone-No Contact",
+		  "Phone-Wrong #/Area Code",
+		  "Request for Phone call",
+		  "Request for extension of response time",
+		  "Response Time Out",
+		  "Restricted Roadway",
+		  "SP Cancel",
+		  "SP Dissatisfied-Claims Payment Issue",
+		  "SP Dissatisfied-Discontinued Services",
+		  "Service Unsuccessful",
+		  "ServiceSuccessful",
+		  "Skip Service Provider",
+		  "Tech only in shop",
+		  "Unattended Service",
+		  "Weather/Code Blue",
+		  "Will not go to location"
+		],
+		"mostly": 0.8
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "DISPATCH_RESPONSE",
+		"value_set": [
+		  "ACCEPTED",
+		  "OPEN",
+		  "REFUSED"
+		],
+		"mostly": 0.99
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "DISPATCH_TYPE",
+		"value_set": [
+		  "agent_call",
+		  "dispatch_bot",
+		  "edispatch"
+		],
+		"mostly": 0.99
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_between",
+	  "kwargs": {
+		"column": "ETA_MINUTES",
+		"min_value": 0,
+		"max_value": 180,
+		"mostly": 0.98
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_min_to_be_between",
+	  "kwargs": {
+		"column": "ETA_MINUTES",
+		"min_value": 0
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_between",
+	  "kwargs": {
+		"column": "ENROUTE_MILES",
+		"min_value": 0,
+		"max_value": 100,
+		"mostly": 0.98
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_min_to_be_between",
+	  "kwargs": {
+		"column": "ENROUTE_MILES",
+		"min_value": 0
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_pair_values_A_to_be_greater_than_B",
+	  "kwargs": {
+		"column_A": "DISPATCH_REQUEST_TIME_UTC",
+		"column_B": "SERVICE_TIME_UTC",
+		"mostly": 0.7,
+		"ignore_row_if": "either_value_is_missing"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_match_regex",
+	  "kwargs": {
+		"column": "PROVIDER_NUMBER",
+		"regex": "^([-]?\\d+)$"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "CASE_NUMBER",
+		"type_": "int64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "TASK_NUMBER",
+		"type_": "int8"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_NUMBER",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_ADDRESS_NUMBER",
+		"type_": "int8"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_CATEGORY",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_CANDIDATE_NUMBER",
+		"type_": "int8"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "DISPATCH_RESPONSE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "DISPATCH_RESPONSE_REASON",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "DISPATCH_TYPE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ENROUTE_MILES",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_NAME",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_ADDRESS_1",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_ADDRESS_2",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_ZIP",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_PHONE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_FAX",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ETA_MINUTES",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "TOTAL_ETA_EXTENSION_MINUTES",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "TOTAL_ETA_EXTENSION_COUNT",
+		"type_": "int8"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "IS_DISPATCHED_PROVIDER",
+		"type_": "bool"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SERVICE_TIME_EASTERN",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SERVICE_TIME_UTC",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "DISPATCH_REQUEST_TIME_EASTERN",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "DISPATCH_REQUEST_TIME_UTC",
+		"type_": "datetime64[ns]"
+	  }
+	}
+  ],
+  "data_asset_type": "Dataset"
+}

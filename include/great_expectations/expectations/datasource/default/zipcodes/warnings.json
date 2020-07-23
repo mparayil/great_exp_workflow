@@ -1,0 +1,389 @@
+{
+  "data_asset_name": "datasource/default/zipcodes",
+  "expectation_suite_name": "warnings",
+  "meta": {
+	"great_expectations.__version__": "0.8.8"
+  },
+  "expectations": [
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ZIP_CODE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "CITY"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "STATE_CODE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "METRO_NAME"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "METRO_TYPE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "COUNTY"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "LATITUDE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "LONGITUDE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "TIMEZONE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_table_column_count_to_equal",
+	  "kwargs": {
+		"value": 9
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ZIP_CODE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "CITY"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "STATE_CODE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "METRO_NAME"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "METRO_TYPE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "COUNTY",
+		"mostly": 0.919
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "LATITUDE",
+		"mostly": 0.952
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "LONGITUDE",
+		"mostly": 0.952
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "TIMEZONE",
+		"mostly": 0.945
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "STATE_CODE",
+		"value_set": [
+		  "MA",
+		  "RI",
+		  "NH",
+		  "NY",
+		  "PA",
+		  "VA",
+		  "ME",
+		  "NJ",
+		  "AE",
+		  "NC",
+		  "GA",
+		  "FL",
+		  "IA",
+		  "MN",
+		  "NE",
+		  "AL",
+		  "OH",
+		  "IN",
+		  "MI",
+		  "WI",
+		  "DC",
+		  "WA",
+		  "KY",
+		  "AZ",
+		  "TN",
+		  "MS",
+		  "DE",
+		  "LA",
+		  "AR",
+		  "TX",
+		  "NM",
+		  "NV",
+		  "ND",
+		  "CO",
+		  "OR",
+		  "AS",
+		  "GU",
+		  "PW",
+		  "MP",
+		  "MH",
+		  "PR",
+		  "MO",
+		  "CT",
+		  "WV",
+		  "KS",
+		  "UT",
+		  "CA",
+		  "IL",
+		  "OK",
+		  "ID",
+		  "WY",
+		  "SD",
+		  "MT",
+		  "HI",
+		  "FM",
+		  "AP",
+		  "AK",
+		  "VI",
+		  "SC",
+		  "VT",
+		  "AA",
+		  "MD"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "METRO_TYPE",
+		"value_set": [
+		  "Tertiary",
+		  "Secondary",
+		  "Primary"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "TIMEZONE",
+		"value_set": [
+		  "America/New_York",
+		  "Europe/Berlin",
+		  "America/Chicago",
+		  "America/Denver",
+		  "America/Indiana/Indianapolis",
+		  "America/Detroit",
+		  "America/Menominee",
+		  "Europe/Oslo",
+		  "Europe/Brussels",
+		  "America/Godthab",
+		  "Europe/Copenhagen",
+		  "Europe/Rome",
+		  "Atlantic/Azores",
+		  "Europe/Helsinki",
+		  "Atlantic/Reykjavik",
+		  "Europe/Lisbon",
+		  "America/Halifax",
+		  "America/Toronto",
+		  "Asia/Karachi",
+		  "Africa/Monrovia",
+		  "Africa/Kinshasa",
+		  "Asia/Jerusalem",
+		  "Africa/Cairo",
+		  "Europe/Athens",
+		  "Asia/Amman",
+		  "America/Phoenix",
+		  "America/North_Dakota/Beulah",
+		  "Asia/Seoul",
+		  "America/Adak",
+		  "Pacific/Auckland",
+		  "Asia/Bangkok",
+		  "America/Nome",
+		  "America/Kentucky/Louisville",
+		  "America/Indiana/Marengo",
+		  "America/Costa_Rica",
+		  "America/La_Paz",
+		  "America/Caracas",
+		  "America/Santo_Domingo",
+		  "Africa/Nairobi",
+		  "America/North_Dakota/Center",
+		  "Pacific/Honolulu",
+		  "Australia/Darwin",
+		  "uninhabited",
+		  "Europe/Madrid",
+		  "America/Thule",
+		  "America/Indiana/Knox",
+		  "America/Santiago",
+		  "Australia/Adelaide",
+		  "America/Anchorage",
+		  "America/Sao_Paulo",
+		  "Africa/Casablanca",
+		  "Indian/Mahe",
+		  "Africa/Khartoum",
+		  "America/Los_Angeles",
+		  "Pacific/Wake",
+		  "America/Winnipeg",
+		  "Asia/Singapore",
+		  "America/Indiana/Winamac",
+		  "America/Panama",
+		  "America/Guatemala",
+		  "Europe/Amsterdam",
+		  "Europe/Paris",
+		  "Europe/Istanbul",
+		  "Asia/Nicosia",
+		  "America/Indiana/Tell_City",
+		  "America/Boise",
+		  "Asia/Tokyo",
+		  "Asia/Jakarta",
+		  "Pacific/Guam",
+		  "America/Montreal",
+		  "America/Indiana/Vevay",
+		  "America/Managua",
+		  "America/Lima",
+		  "America/Argentina/Buenos_Aires",
+		  "America/Montevideo",
+		  "America/Asuncion",
+		  "America/Puerto_Rico",
+		  "America/Nassau",
+		  "America/Yakutat",
+		  "America/Metlakatla",
+		  "America/Indiana/Vincennes",
+		  "Asia/Hong_Kong",
+		  "America/Guayaquil",
+		  "America/Tegucigalpa",
+		  "America/Juneau",
+		  "America/Kentucky/Monticello",
+		  "Asia/Riyadh",
+		  "Australia/Melbourne",
+		  "America/El_Salvador",
+		  "America/Indiana/Petersburg",
+		  "Australia/Sydney",
+		  "Europe/London",
+		  "America/Antigua",
+		  "America/Sitka",
+		  "America/North_Dakota/New_Salem",
+		  "America/Bogota"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_unique",
+	  "kwargs": {
+		"column": "ZIP_CODE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_match_regex",
+	  "kwargs": {
+		"column": "ZIP_CODE",
+		"regex": "^(\\d{5}(-\\d{4})?|[A-CEGHJ-NPRSTVXY]\\d[A-CEGHJ-NPRSTV-Z] ?\\d[A-CEGHJ-NPRSTV-Z]\\d)$"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ZIP_CODE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "CITY",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "STATE_CODE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "METRO_NAME",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "METRO_TYPE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "COUNTY",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "LATITUDE",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "LONGITUDE",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "TIMEZONE",
+		"type_": "object"
+	  }
+	}
+  ],
+  "data_asset_type": "Dataset"
+}

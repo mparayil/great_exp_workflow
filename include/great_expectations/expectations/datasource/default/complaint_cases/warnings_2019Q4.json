@@ -1,0 +1,782 @@
+{
+  "data_asset_name": "datasource/default/customer_complaints",
+  "expectation_suite_name": "warnings_2019Q4",
+  "meta": {
+	"great_expectations.__version__": "0.8.8"
+  },
+  "expectations": [
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "COMMENTS"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "CASE_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "CONCLUSION"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SUMMARY_RESULTS"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "CLIENT_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "COMPLAINT_ID"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "GROUPING"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SOURCE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "REASON"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "DETAILS"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "COMPLAINT_SUBJECT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "COMPLAINT_TYPE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "CREATE_TIME_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "CREATE_TIME_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "IS_CASE_CLOSED"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "IS_EXECUTIVE_ESCALATION"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "IS_EXTERNAL_COMPLAINT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "IS_FROM_SOCIAL_MEDIA"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "LAST_MODIFIED_TIME_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "LAST_MODIFIED_TIME_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "NAME"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "TICKET_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_table_column_count_to_equal",
+	  "kwargs": {
+		"value": 22
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "COMPLAINT_ID"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SOURCE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "CREATE_TIME_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "CREATE_TIME_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "IS_CASE_CLOSED"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "IS_EXECUTIVE_ESCALATION"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "IS_EXTERNAL_COMPLAINT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "IS_FROM_SOCIAL_MEDIA"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "LAST_MODIFIED_TIME_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "LAST_MODIFIED_TIME_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "NAME"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "COMMENTS",
+		"mostly": 0.99
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "CASE_NUMBER",
+		"mostly": 0.94
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "CONCLUSION",
+		"mostly": 0.17
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SUMMARY_RESULTS",
+		"mostly": 0.17
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "CLIENT_NUMBER",
+		"mostly": 0.99
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "GROUPING",
+		"mostly": 0.17
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "REASON",
+		"mostly": 0.17
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "DETAILS",
+		"mostly": 0.03
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "COMPLAINT_SUBJECT",
+		"mostly": 0.15
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "COMPLAINT_TYPE",
+		"mostly": 0.97
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "TICKET_NUMBER",
+		"mostly": 0.93
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "CONCLUSION",
+		"value_set": [
+		  "Credit Denied",
+		  "Escalated to Legal - Demand paid in full",
+		  "Verbal Apology",
+		  "Voicemail Apology",
+		  "Escalated to Legal",
+		  "Proof of service/receipt issued",
+		  "Not a Damage - Sent Final Resolution",
+		  "Claim Paid - Sent Final Resolution",
+		  "DMS - renewal conversion letter sent",
+		  "Damage Repaired - Sent Final Resolution",
+		  "Goodwill \u2013 Sent Final Resolution",
+		  "Pending - Sent Final Resolution",
+		  "Compensation for incurred costs",
+		  "PVT Credit Denied",
+		  "Provided client summary/resolution",
+		  "PVT Credit Paid",
+		  "Closed- IVR no contact",
+		  "Rental expense Paid - Partial",
+		  "Claim Paid - Full",
+		  "Rental expense Paid - Full",
+		  "Sent Final Resolution",
+		  "Pending - Customer Documents",
+		  "Goodwill provided",
+		  "No Customer Contact",
+		  "Reimbursement for RS services - Denied",
+		  "Reimbursement for RS services - Paid",
+		  "Text/Email apology",
+		  "Damage Claim Withdrawn",
+		  "Deferred - Third Party Claim",
+		  "Claim Denied",
+		  "DVR - Not a Damage",
+		  "Re-Submit Customer Documents",
+		  "Claim Paid - Partial",
+		  "Reimbursement - Sent Final Resolution",
+		  "Hard copy mail apology",
+		  "Credit Issued",
+		  "Compliment",
+		  "Escalated to Legal - Response Completed",
+		  "No Action Required",
+		  "Escalated to Legal - Negotiated Settleme",
+		  "Customer Replied",
+		  "Damage settled with Insurance"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "GROUPING",
+		"value_set": [
+		  "Missing vehicle",
+		  "System issue",
+		  "Impound",
+		  "Inquiry",
+		  "Damage",
+		  "PVT",
+		  "Legal Claim",
+		  "Contact Center",
+		  "Program process",
+		  "Network",
+		  "Compliment"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "SOURCE",
+		"value_set": [
+		  "contact center",
+		  "acct manager",
+		  "command center",
+		  "customer care",
+		  "client",
+		  "web",
+		  "survey",
+		  "bbb/ag",
+		  "client portal",
+		  "customer",
+		  "oneroad dvr",
+		  "external",
+		  "dvr application",
+		  "ivr survey",
+		  "pvt",
+		  "internal",
+		  "alert",
+		  "text survey",
+		  "intellra dvr",
+		  "ncc",
+		  "service provider",
+		  "spst",
+		  "cair"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "REASON",
+		"value_set": [
+		  "Missed ETA",
+		  "Did not perform service",
+		  "Client reimbursement",
+		  "Missing vehicle",
+		  "Missed ETA - Location issue",
+		  "Steering",
+		  "Did not perform service - Incorrect service",
+		  "Script/Procedures - Coverage related",
+		  "Stolen/Missing Items",
+		  "Missing Vehicle - Storage",
+		  "Credit request - Overages/Charges denied",
+		  "Credit request",
+		  "Credit request - Service unsuccessful",
+		  "Performance",
+		  "Input error",
+		  "Customer Service - Rude/Tone",
+		  "Did not perform service - Capacity/priority",
+		  "Mishandled Coverage/Overages",
+		  "Missed ETA - Weather/Traffic",
+		  "Input error - Customer/Coverage/Vehicle information",
+		  "Long ETA - SP Coverage/Availability",
+		  "Assault",
+		  "Fatality",
+		  "Charge back",
+		  "Unprofessional",
+		  "Queue time",
+		  "IVR/text/Email/Fax",
+		  "Long ETA - Location issue",
+		  "Input error - VIN/Policy/Callback",
+		  "Coverage",
+		  "Mobile app",
+		  "Did not perform service - SP Cancelled",
+		  "Script/Procedures- Dispatch related",
+		  "Missed ETA - Equipment issue",
+		  "Customer Service - Empathy/Attentive listening",
+		  "Script/Procedures - Reimbursement related",
+		  "Coverage - Incorrect processing",
+		  "Sexual Harassment",
+		  "Did not perform service - Restricted roadway",
+		  "DVR Process Error",
+		  "Credit request - Customer cancel",
+		  "Damage",
+		  "Did not perform service - Equipment",
+		  "Customer doesn't have information needed",
+		  "SP appearance",
+		  "Input error - Disablement/Tow to location",
+		  "Script/Procedures - Overage related",
+		  "Bodily Injury",
+		  "Service Provider",
+		  "Threats",
+		  "Long ETA - Weather/Traffic",
+		  "Audio request",
+		  "Lawsuit Filed/Demand Letters",
+		  "Credit request - Authorization Only",
+		  "Better Business Bureau Complaint",
+		  "Subpoena Requests",
+		  "Customer perception",
+		  "Missed ETA - Delay/Capacity",
+		  "Call history",
+		  "Did not perform service - No service available",
+		  "Coverage - System issue",
+		  "Contact Center",
+		  "Harassment",
+		  "Discrimination",
+		  "Sexual Assault",
+		  "Agent",
+		  "Social Media",
+		  "Billing",
+		  "Script/Procedures",
+		  "Input error - Problem/Service",
+		  "SP steering",
+		  "Customer Service - Unprofessional conduct",
+		  "Coverage - Coverage limits",
+		  "Customer perception - Case handling",
+		  "Script/Procedures - Location related",
+		  "Data Call/Data Failure",
+		  "Missing Vehicle - Unknown",
+		  "Service Provider Background Complaint",
+		  "Credit request - No service completed",
+		  "Customer perception - Dispatch process",
+		  "Did not perform service - Knowledge related",
+		  "Missing Vehicle - Incorrect tow location",
+		  "Queue time - Long wait times",
+		  "Billing - Client requested",
+		  "Receipt request",
+		  "Check Fraud",
+		  "Law Enforcement Inquiries",
+		  "Attorney General Complaint",
+		  "Department of Insurance Complaint"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "DETAILS",
+		"value_set": [
+		  "Overages",
+		  "< 60 mins",
+		  "Did not say evaluation of reimbursement",
+		  "Dispatch fee",
+		  "Called wrong roadside number",
+		  "SP pushed customer to certain tow-to location",
+		  "> 120 mins",
+		  "Extended ETA multiple times",
+		  "Customer not satisfied with coverage limits",
+		  "Dispatch procedures not followed",
+		  "60-120 mins",
+		  "Rude",
+		  "Did not know how to complete job",
+		  "Client system down",
+		  "Stored vehicle without notification",
+		  "Vehicle found at tow-to location",
+		  "Restricted roadway",
+		  "Received priority call",
+		  "Customer canceled",
+		  "Locking lug nuts",
+		  "Vehicle delivered to wrong location",
+		  "Out of area",
+		  "Performed other service",
+		  "Coded weather event",
+		  "Late delivery",
+		  "Agero system down",
+		  "Service not completed",
+		  "Customer perception",
+		  "Harassment",
+		  "Agent error",
+		  ">2 hrs, remediation",
+		  "<= 2 hrs",
+		  "Lack of equipment",
+		  "Customer not aware of coverage",
+		  "Policy/warranty coverage",
+		  "> 2 hrs",
+		  "No show",
+		  "Service unsuccessful"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "COMPLAINT_TYPE",
+		"value_set": [
+		  "Contact Center Agent Complaint",
+		  "Coverage Limits/Overages",
+		  "Mechanical",
+		  "Training Exercise \u2013 No Damage",
+		  "Body Damage - Grill/Hood",
+		  "Drive Shaft",
+		  "Program Guidelines Complaint",
+		  "Missing Key",
+		  "Rear Hatch/Trunk wont clo",
+		  "Lockout Damage",
+		  "Body Damage - Rear Bumper",
+		  "Wheel/Tire - Hub",
+		  "Interior - Floor",
+		  "Wheels/Tire - Tire/Rim",
+		  "Body Damage",
+		  "Battery/Electrical",
+		  "Wheels/Tire - Hub Cap/Lug Nut",
+		  "Transmission",
+		  "Body Damage - Lights",
+		  "Chassis/Steering",
+		  "Property Damage - Structure",
+		  "Bumper",
+		  "Service Provider Complain",
+		  "Missed ETA Complaint",
+		  "Mechanical - Brakes",
+		  "Missing/Damaged Key",
+		  "Engine",
+		  "Coverage Limits/Overages Complaint",
+		  "Fuel Tank",
+		  "Glass - Window",
+		  "Interior",
+		  "Exhaust",
+		  "Threatening Legal Action",
+		  "Glass",
+		  "Requests Proof of Service",
+		  "Body Damage - Door",
+		  "Interior - Staining",
+		  "Contact Center Agent Comp",
+		  "No Damage",
+		  "Body Damage - Roof",
+		  "Chassis/Steering - Tie Rod",
+		  "Interior \u2013 Gear Shifter",
+		  "Body Damage - Mirror",
+		  "Glass - Windshield",
+		  "Interior \u2013 Steering Column",
+		  "Service Provider Complaint",
+		  "Lock",
+		  "Body Damage - Bumper/Fender/Panel",
+		  "Property Damage - Yard",
+		  "Wheels/Tire - Equipment",
+		  "Property Damage",
+		  "Chassis/Steering - Control Arm",
+		  "Body Damage - Frame",
+		  "Body Damage - Fender/Quarter Panel",
+		  "Battery/Electrical - ECM/Fuse",
+		  "Program Guidelines  Compl",
+		  "Body Damage - Scratches",
+		  "No Damage - Stolen Property",
+		  "Body Damage - Undercarriage",
+		  "Interior - Ignition",
+		  "Engine - Oil Pan",
+		  "Body Damage -Front Bumper"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_unique",
+	  "kwargs": {
+		"column": "COMPLAINT_ID"
+	  }
+	},
+	{
+	  "expectation_type": "expect_multicolumn_values_to_be_unique",
+	  "kwargs": {
+		"column_list": [
+		  "CASE_NUMBER",
+		  "TICKET_NUMBER"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_pair_values_A_to_be_greater_than_B",
+	  "kwargs": {
+		"column_A": "LAST_MODIFIED_TIME_UTC",
+		"column_B": "CREATE_TIME_UTC",
+		"ignore_row_if": "either_value_is_missing",
+		"or_equal": true
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "COMPLAINT_ID",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "CASE_NUMBER",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "TICKET_NUMBER",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "GROUPING",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "REASON",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "DETAILS",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SOURCE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "IS_EXTERNAL_COMPLAINT",
+		"type_": "bool"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "COMMENTS",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "IS_CASE_CLOSED",
+		"type_": "bool"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "CONCLUSION",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SUMMARY_RESULTS",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "IS_EXECUTIVE_ESCALATION",
+		"type_": "bool"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "IS_FROM_SOCIAL_MEDIA",
+		"type_": "bool"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "NAME",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "COMPLAINT_TYPE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "COMPLAINT_SUBJECT",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "CLIENT_NUMBER",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "CREATE_TIME_EASTERN",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "CREATE_TIME_UTC",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "LAST_MODIFIED_TIME_EASTERN",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "LAST_MODIFIED_TIME_UTC",
+		"type_": "datetime64[ns]"
+	  }
+	}
+  ],
+  "data_asset_type": "Dataset"
+}
