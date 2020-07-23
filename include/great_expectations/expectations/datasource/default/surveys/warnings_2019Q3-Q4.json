@@ -1,0 +1,165 @@
+{
+  "data_asset_name": "datasource/default/surveys",
+  "expectation_suite_name": "warnings_2019Q3-Q4",
+  "meta": {
+	"great_expectations.__version__": "0.8.8"
+  },
+  "expectations": [
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "CASE_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SURVEY_RESPONSE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "COMMENTS"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SURVEY_SOURCE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SURVEY_TIME_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SURVEY_TIME_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_table_column_count_to_equal",
+	  "kwargs": {
+		"value": 6
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "CASE_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SURVEY_RESPONSE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SURVEY_SOURCE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SURVEY_TIME_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SURVEY_TIME_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "COMMENTS",
+		"mostly": 0.06
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "SURVEY_SOURCE",
+		"value_set": [
+		  "web",
+		  "sms"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_between",
+	  "kwargs": {
+		"column": "SURVEY_RESPONSE",
+		"min_value": 0,
+		"max_value": 10
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_pair_values_A_to_be_greater_than_B",
+	  "kwargs": {
+		"column_A": "SURVEY_TIME_UTC",
+		"column_B": "SURVEY_TIME_EASTERN",
+		"ignore_row_if": "either_value_is_missing"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "CASE_NUMBER",
+		"type_": "int64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SURVEY_RESPONSE",
+		"type_": "int8"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "COMMENTS",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SURVEY_SOURCE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SURVEY_TIME_EASTERN",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SURVEY_TIME_UTC",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_mean_to_be_between",
+	  "kwargs": {
+		"column": "SURVEY_RESPONSE",
+		"min_value": 7.0,
+		"max_value": 9.7
+	  }
+	}
+  ],
+  "data_asset_type": "Dataset"
+}

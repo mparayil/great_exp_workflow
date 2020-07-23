@@ -1,0 +1,988 @@
+{
+  "data_asset_name": "datasource/default/claim_requests",
+  "expectation_suite_name": "warnings_dec2019",
+  "meta": {
+	"great_expectations.__version__": "0.8.8"
+  },
+  "expectations": [
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ADDCHARGE_AMOUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ADDCHARGE_COUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ADDCHARGE_DETAILS"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ADDPAY_APPROVED_DATE_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ADDPAY_APPROVED_DATE_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ADDPAY_APPROVED_PAYMENT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ADDPAY_COUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ADDPAY_DETAILS"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ADDPAY_PAYMENT_AMOUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "BASE_TOTAL_FROM_RATES"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "CASE_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "CLAIM_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "COMPLETE_APPROVED_PAYMENT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "IS_CLAIM_APPROVED"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "IS_VCC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_APPROVED_DATE_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_APPROVED_DATE_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_APPROVED_PAYMENT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_PAYMENT_AMOUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_STATUS_CODE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_SUBMITTED_DATE_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_SUBMITTED_DATE_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_TYPE_CODE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PO_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SERVICE_DATE_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SERVICE_DATE_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SERVICE_ID"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SUBMITTED_CLAIM_AMOUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SUBMITTED_ENROUTE_MILES"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SUBMITTED_LABOR_HOURS"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "SUBMITTED_TOW_MILES"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "TICKET_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_ADDRESS_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "PROVIDER_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_to_exist",
+	  "kwargs": {
+		"column": "WAS_AUDITED"
+	  }
+	},
+	{
+	  "expectation_type": "expect_table_column_count_to_equal",
+	  "kwargs": {
+		"value": 35
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "CASE_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "TICKET_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "PROVIDER_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "CLAIM_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "PO_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_PAYMENT_AMOUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_STATUS_CODE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_TYPE_CODE"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SUBMITTED_CLAIM_AMOUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SERVICE_ID"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "WAS_AUDITED"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "IS_CLAIM_APPROVED"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_APPROVED_PAYMENT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ADDCHARGE_COUNT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "COMPLETE_APPROVED_PAYMENT"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "IS_VCC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SERVICE_DATE_EASTERN"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SERVICE_DATE_UTC"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "PROVIDER_ADDRESS_NUMBER",
+		"mostly": 0.992
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SUBMITTED_TOW_MILES",
+		"mostly": 0.976
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SUBMITTED_ENROUTE_MILES",
+		"mostly": 0.993
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "SUBMITTED_LABOR_HOURS",
+		"mostly": 0.937
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ADDCHARGE_AMOUNT",
+		"mostly": 0.001
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ADDCHARGE_DETAILS",
+		"mostly": 0.001
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "BASE_TOTAL_FROM_RATES",
+		"mostly": 0.658
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ADDPAY_DETAILS",
+		"mostly": 0.035
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ADDPAY_COUNT",
+		"mostly": 0.035
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ADDPAY_PAYMENT_AMOUNT",
+		"mostly": 0.035
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ADDPAY_APPROVED_PAYMENT",
+		"mostly": 0.035
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_APPROVED_DATE_EASTERN",
+		"mostly": 0.976
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_APPROVED_DATE_UTC",
+		"mostly": 0.976
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_SUBMITTED_DATE_EASTERN",
+		"mostly": 0.998
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_SUBMITTED_DATE_UTC",
+		"mostly": 0.998
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ADDPAY_APPROVED_DATE_EASTERN",
+		"mostly": 0.034
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_not_be_null",
+	  "kwargs": {
+		"column": "ADDPAY_APPROVED_DATE_UTC",
+		"mostly": 0.034
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_STATUS_CODE",
+		"value_set": [
+		  "AP",
+		  "DP",
+		  "FC",
+		  "FP",
+		  "HD",
+		  "PC",
+		  "PD",
+		  "PJ",
+		  "SP",
+		  "VD"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_TYPE_CODE",
+		"value_set": [
+		  "VND"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_in_set",
+	  "kwargs": {
+		"column": "SERVICE_ID",
+		"value_set": [
+		  "GOA",
+		  "LOCK",
+		  "Lock",
+		  "NA",
+		  "REPO",
+		  "ROAD",
+		  "Road",
+		  "TOW",
+		  "Tow",
+		  "null"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_json_parseable",
+	  "kwargs": {
+		"column": "ADDCHARGE_DETAILS",
+		"mostly": 0.98
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_json_parseable",
+	  "kwargs": {
+		"column": "ADDPAY_DETAILS",
+		"mostly": 0.98
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_match_json_schema",
+	  "kwargs": {
+		"column": "ADDPAY_DETAILS",
+		"json_schema": {
+		  "definitions": {},
+		  "$schema": "http://json-schema.org/draft-07/schema#",
+		  "$id": "http://example.com/root.json",
+		  "type": [
+			"array",
+			"null"
+		  ],
+		  "title": "The Root Schema",
+		  "items": {
+			"$id": "#/items",
+			"type": [
+			  "object",
+			  "null"
+			],
+			"title": "The Items Schema",
+			"required": [
+			  "addpay_approved_date",
+			  "addpay_approved_payment_amount",
+			  "addpay_claim_id",
+			  "addpay_is_approved",
+			  "addpay_payment_amount",
+			  "addpay_submitted_date",
+			  "addpay_task_id",
+			  "addpay_vendor_id",
+			  "original_claim_amount_paid",
+			  "original_claim_amount_requested",
+			  "original_claim_id",
+			  "original_claim_vendor_id",
+			  "service_date"
+			],
+			"properties": {
+			  "addpay_approved_date": {
+				"$id": "#/items/properties/addpay_approved_date",
+				"type": [
+				  "string",
+				  "null"
+				],
+				"format": "date-time",
+				"title": "The Addpay_approved_date Schema",
+				"default": "",
+				"examples": [
+				  "2019-02-20T04:02:00"
+				],
+				"pattern": "^(.*)$"
+			  },
+			  "addpay_approved_payment_amount": {
+				"$id": "#/items/properties/addpay_approved_payment_amount",
+				"type": [
+				  "number",
+				  "null"
+				],
+				"title": "The Addpay_approved_payment_amount Schema",
+				"default": 0,
+				"examples": [
+				  27
+				]
+			  },
+			  "addpay_claim_id": {
+				"$id": "#/items/properties/addpay_claim_id",
+				"type": [
+				  "number",
+				  "null"
+				],
+				"title": "The Addpay_claim_id Schema",
+				"default": 0,
+				"examples": [
+				  88551584
+				]
+			  },
+			  "addpay_is_approved": {
+				"$id": "#/items/properties/addpay_is_approved",
+				"type": [
+				  "boolean",
+				  "null"
+				],
+				"title": "The Addpay_is_approved Schema",
+				"default": false,
+				"examples": [
+				  true
+				]
+			  },
+			  "addpay_payment_amount": {
+				"$id": "#/items/properties/addpay_payment_amount",
+				"type": [
+				  "number",
+				  "null"
+				],
+				"title": "The Addpay_payment_amount Schema",
+				"default": 0,
+				"examples": [
+				  27
+				]
+			  },
+			  "addpay_submitted_date": {
+				"$id": "#/items/properties/addpay_submitted_date",
+				"type": [
+				  "string",
+				  "null"
+				],
+				"format": "date-time",
+				"title": "The Addpay_submitted_date Schema",
+				"default": "",
+				"examples": [
+				  "2019-02-19T00:00:00"
+				],
+				"pattern": "^(.*)$"
+			  },
+			  "addpay_task_id": {
+				"$id": "#/items/properties/addpay_task_id",
+				"type": [
+				  "number",
+				  "null"
+				],
+				"title": "The Addpay_task_id Schema",
+				"default": 0,
+				"examples": [
+				  2
+				]
+			  },
+			  "addpay_vendor_id": {
+				"$id": "#/items/properties/addpay_vendor_id",
+				"type": [
+				  "string",
+				  "null"
+				],
+				"title": "The Addpay_vendor_id Schema",
+				"default": "",
+				"examples": [
+				  "133573"
+				],
+				"pattern": "^(.*)$"
+			  },
+			  "original_claim_amount_paid": {
+				"$id": "#/items/properties/original_claim_amount_paid",
+				"type": [
+				  "number",
+				  "null"
+				],
+				"title": "The Original_claim_amount_paid Schema",
+				"default": 0.0,
+				"examples": [
+				  57.95
+				]
+			  },
+			  "original_claim_amount_requested": {
+				"$id": "#/items/properties/original_claim_amount_requested",
+				"type": [
+				  "number",
+				  "null"
+				],
+				"title": "The Original_claim_amount_requested Schema",
+				"default": 0,
+				"examples": [
+				  59
+				]
+			  },
+			  "original_claim_id": {
+				"$id": "#/items/properties/original_claim_id",
+				"type": [
+				  "number",
+				  "null"
+				],
+				"title": "The Original_claim_id Schema",
+				"default": 0,
+				"examples": [
+				  195082625
+				]
+			  },
+			  "original_claim_vendor_id": {
+				"$id": "#/items/properties/original_claim_vendor_id",
+				"type": [
+				  "string",
+				  "null"
+				],
+				"title": "The Original_claim_vendor_id Schema",
+				"default": "",
+				"examples": [
+				  "133573"
+				],
+				"pattern": "^(.*)$"
+			  },
+			  "service_date": {
+				"$id": "#/items/properties/service_date",
+				"type": [
+				  "string",
+				  "null"
+				],
+				"format": "date-time",
+				"title": "The Service_date Schema",
+				"default": "",
+				"examples": [
+				  "2019-02-14T11:50:21"
+				],
+				"pattern": "^(.*)$"
+			  }
+			}
+		  }
+		},
+		"mostly": 0.92
+	  }
+	},
+	{
+	  "expectation_type": "expect_multicolumn_values_to_be_unique",
+	  "kwargs": {
+		"column_list": [
+		  "CASE_NUMBER",
+		  "TICKET_NUMBER",
+		  "PROVIDER_NUMBER"
+		]
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_unique",
+	  "kwargs": {
+		"column": "CLAIM_NUMBER"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_pair_values_A_to_be_greater_than_B",
+	  "kwargs": {
+		"column_A": "ORIGINAL_CLAIM_APPROVED_DATE_UTC",
+		"column_B": "ORIGINAL_CLAIM_SUBMITTED_DATE_UTC",
+		"mostly": 0.99,
+		"ignore_row_if": "either_value_is_missing"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "CASE_NUMBER",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "TICKET_NUMBER",
+		"type_": "int8"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_NUMBER",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PROVIDER_ADDRESS_NUMBER",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "CLAIM_NUMBER",
+		"type_": "int32"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "PO_NUMBER",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_PAYMENT_AMOUNT",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_STATUS_CODE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_TYPE_CODE",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SUBMITTED_CLAIM_AMOUNT",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SUBMITTED_TOW_MILES",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SUBMITTED_ENROUTE_MILES",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SUBMITTED_LABOR_HOURS",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SERVICE_ID",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "WAS_AUDITED",
+		"type_": "bool"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ADDCHARGE_AMOUNT",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "IS_CLAIM_APPROVED",
+		"type_": "bool"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_APPROVED_PAYMENT",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ADDCHARGE_DETAILS",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ADDCHARGE_COUNT",
+		"type_": "int8"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "BASE_TOTAL_FROM_RATES",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ADDPAY_DETAILS",
+		"type_": "object"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ADDPAY_COUNT",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ADDPAY_PAYMENT_AMOUNT",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ADDPAY_APPROVED_PAYMENT",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "COMPLETE_APPROVED_PAYMENT",
+		"type_": "float64"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "IS_VCC",
+		"type_": "bool"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_APPROVED_DATE_EASTERN",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_APPROVED_DATE_UTC",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SERVICE_DATE_EASTERN",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "SERVICE_DATE_UTC",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_SUBMITTED_DATE_EASTERN",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ORIGINAL_CLAIM_SUBMITTED_DATE_UTC",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ADDPAY_APPROVED_DATE_EASTERN",
+		"type_": "datetime64[ns]"
+	  }
+	},
+	{
+	  "expectation_type": "expect_column_values_to_be_of_type",
+	  "kwargs": {
+		"column": "ADDPAY_APPROVED_DATE_UTC",
+		"type_": "datetime64[ns]"
+	  }
+	}
+  ],
+  "data_asset_type": "Dataset"
+}
