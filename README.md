@@ -14,8 +14,8 @@ to schedule the validation workflow.
 
 ## Introduction
 
-The purpose of this workflow is step through the project structure & setup needed to standup great_expectations
-as a data monitoring tool while for any use case. Great Expectations is an open source library that sets up pipeline 
+The purpose of this workflow is step through the project structure & setup needed to stand up great_expectations
+as a data monitoring tool for any use case. Great Expectations is an open source library that sets up pipeline 
 tests against batches of data using codified expectations of data behavior. Once locally tested and running, the workflow
 is deployed in Airflow via Astronomer to be scheduled on a regular cadence. For the purposes of this documentation, installation of
 Great Expectations and Airflow will not be covered here.
@@ -31,6 +31,8 @@ The following should be installed or setup prior to:
 * Astronomer Airflow or regular Airflow
 * Great Expectations
 * Python 3 virtual environment
+* Relevant Python Packages
+    * see _requirements.txt_ file
 
 **Installation Notes:**
 1. Astronomer Airflow should be installed from HOME directory (NOT FROM THE PROJECT directory).
