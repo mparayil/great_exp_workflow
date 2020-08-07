@@ -2,9 +2,13 @@ import os
 import sys
 from datetime import datetime, timedelta
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
+=======
+
+>>>>>>> development
 path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + '/include/great_expectations'
 sys.path.append(path)
 from ge_prod.validate_expectations import validate_batch_data
@@ -18,10 +22,14 @@ default_args = {
 	'depends_on_past': False,
 	'start_date': datetime(2020, 3, 9),
 <<<<<<< HEAD
+<<<<<<< HEAD
 	'email': ["mark.parayil@gmail.com"],
 =======
 	'email': ["mparayil@agero.com"],
 >>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
+=======
+	'email': ["mark.parayil@gmail.com"],
+>>>>>>> development
 	'email_on_failure': True,
 	'email_on_retry': False,
 	'retries': 1,
@@ -36,6 +44,9 @@ starting_validation = DummyOperator(task_id='starting_validation', dag=validate_
 
 provider_network = PythonOperator(task_id='validate_provider_network',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> development
                                   python_callable=validate_batch_data,
                                   op_kwargs={'table_name': 'provider_network',
                                              'suite_name': 'warnings_dec2019'},
@@ -49,6 +60,7 @@ surveys = PythonOperator(task_id='validate_surveys', python_callable=validate_ba
                          op_kwargs={'table_name': 'surveys',
                                     'suite_name': 'warnings_2019Q3-Q4'},
                          dag=validate_dag)
+<<<<<<< HEAD
 =======
                              python_callable=validate_batch_data,
                              op_kwargs={'table_name': 'provider_network',
@@ -64,12 +76,15 @@ surveys = PythonOperator(task_id='validate_surveys', python_callable=validate_ba
                                      'suite_name': 'warnings_2019Q3-Q4'},
                           dag=validate_dag)
 >>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
+=======
+>>>>>>> development
 
 complaint_cases = PythonOperator(task_id='validate_complaint_cases', python_callable=validate_batch_data,
                                  op_kwargs={'table_name': 'complaint_cases',
                                             'suite_name': 'warnings_2019Q4'},
                                  dag=validate_dag)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 zipcodes = PythonOperator(task_id='validate_zipcodes', python_callable=validate_batch_data,
                           op_kwargs={'table_name': 'zipcodes', 'suite_name': 'warnings'},
@@ -80,6 +95,11 @@ zipcodes = PythonOperator(task_id='validate_zipcodes', python_callable=validate_
                                  op_kwargs={'table_name': 'zipcodes', 'suite_name': 'warnings'},
                                  dag=validate_dag)
 >>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
+=======
+zipcodes = PythonOperator(task_id='validate_zipcodes', python_callable=validate_batch_data,
+                          op_kwargs={'table_name': 'zipcodes', 'suite_name': 'warnings'},
+                          dag=validate_dag)
+>>>>>>> development
 
 finish_validation = DummyOperator(task_id='ending_validation', dag=validate_dag)
 
@@ -88,7 +108,11 @@ claim_requests.set_upstream(starting_validation)
 surveys.set_upstream(starting_validation)
 complaint_cases.set_upstream(starting_validation)
 <<<<<<< HEAD
+<<<<<<< HEAD
 zipcodes.set_upstream(starting_validation)
 =======
 zipcodes.set_upstream(starting_validation)
 >>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
+=======
+zipcodes.set_upstream(starting_validation)
+>>>>>>> development
