@@ -16,6 +16,9 @@ include/great_expectations/uncommitted/*
 
 # Jupiter notebook related
 .ipynb_checkpoints
+*.ipynb
+!create_expectations-template.ipynb
+!validation_playground-template.ipynb
 
 # temp data
 include/great_expectations/temp/
