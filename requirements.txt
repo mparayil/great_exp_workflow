@@ -1,5 +1,5 @@
 boto3==1.10.50
-numpy==1.18.1
+numpy==1.22.0
 pyarrow==0.15.1
 great-expectations==0.8.8
 pandas==0.25.3
