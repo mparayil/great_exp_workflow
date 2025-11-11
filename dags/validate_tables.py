@@ -40,46 +40,16 @@ surveys = PythonOperator(task_id='validate_surveys', python_callable=validate_ba
                          op_kwargs={'table_name': 'surveys',
                                     'suite_name': 'warnings_2019Q3-Q4'},
                          dag=validate_dag)
-<<<<<<< HEAD
-=======
-                             python_callable=validate_batch_data,
-                             op_kwargs={'table_name': 'provider_network',
-                                        'suite_name': 'warnings_dec2019'},
-                             dag=validate_dag)
-
-claim_requests = PythonOperator(task_id='validate_claim_requests', python_callable=validate_batch_data,
-                           op_kwargs={'table_name': 'claim_requests',
-                                      'suite_name': 'warnings_dec2019'}, dag=validate_dag)
-
-surveys = PythonOperator(task_id='validate_surveys', python_callable=validate_batch_data,
-                          op_kwargs={'table_name': 'surveys',
-                                     'suite_name': 'warnings_2019Q3-Q4'},
-                          dag=validate_dag)
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
->>>>>>> development
 
 complaint_cases = PythonOperator(task_id='validate_complaint_cases', python_callable=validate_batch_data,
                                  op_kwargs={'table_name': 'complaint_cases',
                                             'suite_name': 'warnings_2019Q4'},
                                  dag=validate_dag)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-zipcodes = PythonOperator(task_id='validate_zipcodes', python_callable=validate_batch_data,
-                          op_kwargs={'table_name': 'zipcodes', 'suite_name': 'warnings'},
-                          dag=validate_dag)
-=======
 
 zipcodes = PythonOperator(task_id='validate_zipcodes', python_callable=validate_batch_data,
                                  op_kwargs={'table_name': 'zipcodes', 'suite_name': 'warnings'},
                                  dag=validate_dag)
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
-zipcodes = PythonOperator(task_id='validate_zipcodes', python_callable=validate_batch_data,
-                          op_kwargs={'table_name': 'zipcodes', 'suite_name': 'warnings'},
-                          dag=validate_dag)
->>>>>>> development
 
 finish_validation = DummyOperator(task_id='ending_validation', dag=validate_dag)
 
@@ -87,12 +57,5 @@ provider_network.set_upstream(starting_validation)
 claim_requests.set_upstream(starting_validation)
 surveys.set_upstream(starting_validation)
 complaint_cases.set_upstream(starting_validation)
-<<<<<<< HEAD
-<<<<<<< HEAD
 zipcodes.set_upstream(starting_validation)
-=======
-zipcodes.set_upstream(starting_validation)
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
-zipcodes.set_upstream(starting_validation)
->>>>>>> development
+
