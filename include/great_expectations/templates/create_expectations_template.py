@@ -57,27 +57,12 @@ def generate_expectations(table_name: str, batch: ge.dataset.Dataset):
 	column_names = batch.get_table_columns()
 	# master column names identified from initial table creation
 	master_col_names = [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> development
 		'CASE_NUMBER', 'TASK_NUMBER', 'PROVIDER_NUMBER', 'PROVIDER_ADDRESS_NUMBER', 'PROVIDER_CATEGORY',
 		'PROVIDER_CANDIDATE_NUMBER', 'DISPATCH_RESPONSE', 'DISPATCH_RESPONSE_REASON', 'DISPATCH_TYPE',
 		'ENROUTE_MILES', 'SERVICE_TIME_EASTERN', 'SERVICE_TIME_UTC', 'DISPATCH_REQUEST_TIME_EASTERN',
 		'DISPATCH_REQUEST_TIME_UTC', 'VENDOR_NAME', 'VENDOR_ADDRESS_1', 'VENDOR_ADDRESS_2',
 		'PROVIDER_ZIP', 'VENDOR_PHONE', 'VENDOR_FAX', 'ETA_MINUTES', 'TOTAL_ETA_EXTENSION_MINUTES',
 		'TOTAL_ETA_EXTENSION_COUNT', 'IS_DISPATCHED_PROVIDER'
-<<<<<<< HEAD
-=======
-		'CASE_ID', 'TASK_ID', 'VENDOR_ID', 'VENDOR_ADDRESS_ID', 'VENDOR_CATEGORY',
-		'VENDOR_CANDIDATE_NUMBER', 'DISPATCH_RESPONSE', 'DISPATCH_RESPONSE_REASON', 'DISPATCH_TYPE',
-		'ENROUTE_MILES', 'SERVICE_TIME_EASTERN', 'SERVICE_TIME_UTC', 'DISPATCH_REQUEST_TIME_EASTERN',
-		'DISPATCH_REQUEST_TIME_UTC', 'VENDOR_NAME', 'VENDOR_ADDRESS_1', 'VENDOR_ADDRESS_2',
-		'VENDOR_ZIP', 'VENDOR_PHONE', 'VENDOR_FAX', 'ETA_MINUTES', 'TOTAL_ETA_EXTENSION_MINUTES',
-		'TOTAL_ETA_EXTENSION_COUNT', 'IS_DISPATCHED_VENDOR'
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
->>>>>>> development
 	]
 	
 	print('# of columns: ', len(column_names))
@@ -90,25 +75,11 @@ def generate_expectations(table_name: str, batch: ge.dataset.Dataset):
 	# Rule 3: Checking which columns should not have null values
 	print('Viewing column null value counts: ', batch.isnull().sum(), sep='\n')
 	not_null_cols = [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> development
-		'CASE_NUMBER', 'TASK_NUMBER', 'PROVIDER_NUMBER', 'PROVIDER_ADDRESS_NUMBER', 'PROVIDER_CATEGORY',
-		'PROVIDER_CANDIDATE_NUMBER', 'DISPATCH_RESPONSE', 'DISPATCH_RESPONSE_REASON', 'DISPATCH_TYPE',
-		'SERVICE_TIME_EASTERN', 'SERVICE_TIME_UTC', 'DISPATCH_REQUEST_TIME_EASTERN',
-		'DISPATCH_REQUEST_TIME_UTC', 'TOTAL_ETA_EXTENSION_MINUTES',
-		'TOTAL_ETA_EXTENSION_COUNT', 'IS_DISPATCHED_PROVIDER'
-<<<<<<< HEAD
-=======
 		'CASE_ID', 'TASK_ID', 'VENDOR_ID', 'VENDOR_ADDRESS_ID', 'VENDOR_CATEGORY',
 		'VENDOR_CANDIDATE_NUMBER', 'DISPATCH_RESPONSE', 'DISPATCH_RESPONSE_REASON', 'DISPATCH_TYPE',
 		'SERVICE_TIME_EASTERN', 'SERVICE_TIME_UTC', 'DISPATCH_REQUEST_TIME_EASTERN',
 		'DISPATCH_REQUEST_TIME_UTC', 'TOTAL_ETA_EXTENSION_MINUTES',
 		'TOTAL_ETA_EXTENSION_COUNT', 'IS_DISPATCHED_VENDOR'
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
->>>>>>> development
 	]
 	for col in not_null_cols:
 		print(col, '\n', batch.expect_column_values_to_not_be_null(col, result_format='BASIC', catch_exceptions=True))
@@ -122,43 +93,26 @@ def generate_expectations(table_name: str, batch: ge.dataset.Dataset):
 	# data[data.column.notnull()]
 	
 	# df_date_normalized = rule_df.groupby(pd.DatetimeIndex(rule_df['DISPATCH_REQUEST_TIME_UTC']).normalize())
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 	# df_date_normalized.apply(lambda x: x['PROVIDER_CATEGORY'].notnull().mean())
-=======
+
 	# df_date_normalized.apply(lambda x: x['VENDOR_CATEGORY'].notnull().mean())
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
-	# df_date_normalized.apply(lambda x: x['PROVIDER_CATEGORY'].notnull().mean())
->>>>>>> development
 	
 	# g = df.groupby(df.DISPATCH_REQUEST_TIME_UTC.dt.week)
 	# g.apply(lambda x: x['ENROUTE_MILES'].notnull().mean())
 	
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 	weights = {'ETA_MINUTES': 0.6, 'PROVIDER_CATEGORY': 0.97, 'ENROUTE_MILES': 0.95}
-=======
+
 	weights = {'ETA_MINUTES': 0.6, 'VENDOR_CATEGORY': 0.97, 'ENROUTE_MILES': 0.95}
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
-	weights = {'ETA_MINUTES': 0.6, 'PROVIDER_CATEGORY': 0.97, 'ENROUTE_MILES': 0.95}
->>>>>>> development
+
 	for col, weight in weights.items():
 		print(col, '\n', batch.expect_column_values_to_not_be_null(col, mostly=weight, include_config=True,
 		                                                           catch_exceptions=True,
 		                                                           result_format='BASIC'))
 	
 	# Expecting columns to be in an unique set at least X % of the time (X given by dict value)
-<<<<<<< HEAD
-<<<<<<< HEAD
 	category_cols = {'PROVIDER_CATEGORY': 0.8, 'DISPATCH_RESPONSE_REASON': 0.8, 'DISPATCH_RESPONSE': 0.99,
-=======
-	category_cols = {'VENDOR_CATEGORY': 0.8, 'DISPATCH_RESPONSE_REASON': 0.8, 'DISPATCH_RESPONSE': 0.99,
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
-	category_cols = {'PROVIDER_CATEGORY': 0.8, 'DISPATCH_RESPONSE_REASON': 0.8, 'DISPATCH_RESPONSE': 0.99,
->>>>>>> development
 	                 'DISPATCH_TYPE': 0.99}
 	val_set_list = []
 	
@@ -199,21 +153,11 @@ def generate_expectations(table_name: str, batch: ge.dataset.Dataset):
 	                                                             result_format='BASIC', catch_exceptions=True))
 	
 	# Matches any integer, including negative leading with -, and things with leading 0
-<<<<<<< HEAD
-<<<<<<< HEAD
 	print(batch.expect_column_values_to_match_regex('PROVIDER_NUMBER', '^([-]?\d+)$'))
 	# Matches US zip codes (including +4) and Canadian zip codes
-	print(batch.expect_column_values_to_match_regex('PROVIDER_ZIP',
-=======
 	print(batch.expect_column_values_to_match_regex('VENDOR_ID', '^([-]?\d+)$'))
 	# Matches US zip codes (including +4) and Canadian zip codes
-	print(batch.expect_column_values_to_match_regex('VENDOR_ZIP',
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
-	print(batch.expect_column_values_to_match_regex('PROVIDER_NUMBER', '^([-]?\d+)$'))
-	# Matches US zip codes (including +4) and Canadian zip codes
 	print(batch.expect_column_values_to_match_regex('PROVIDER_ZIP',
->>>>>>> development
 	                                                '^(\d{5}(-\d{4})?|[A-CEGHJ-NPRSTVXY]\d[A-CEGHJ-NPRSTV-Z] ?\d[A-CEGHJ-NPRSTV-Z]\d)$'))
 	
 	# Rule 8: column to be of data type
