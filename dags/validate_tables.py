@@ -1,14 +1,6 @@
 import os
 import sys
 from datetime import datetime, timedelta
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
-
->>>>>>> development
 path = os.path.dirname(os.path.dirname(os.path.realpath(__file__))) + '/include/great_expectations'
 sys.path.append(path)
 from ge_prod.validate_expectations import validate_batch_data
@@ -21,15 +13,7 @@ default_args = {
 	'owner': 'mparayil',
 	'depends_on_past': False,
 	'start_date': datetime(2020, 3, 9),
-<<<<<<< HEAD
-<<<<<<< HEAD
 	'email': ["mark.parayil@gmail.com"],
-=======
-	'email': ["mparayil@agero.com"],
->>>>>>> 79e5d6536fef5fca5f5bed02784b1b092bc19655
-=======
-	'email': ["mark.parayil@gmail.com"],
->>>>>>> development
 	'email_on_failure': True,
 	'email_on_retry': False,
 	'retries': 1,
@@ -43,10 +27,6 @@ validate_dag = DAG(dag_id='validate_expectations_daily', default_args=default_ar
 starting_validation = DummyOperator(task_id='starting_validation', dag=validate_dag)
 
 provider_network = PythonOperator(task_id='validate_provider_network',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> development
                                   python_callable=validate_batch_data,
                                   op_kwargs={'table_name': 'provider_network',
                                              'suite_name': 'warnings_dec2019'},
