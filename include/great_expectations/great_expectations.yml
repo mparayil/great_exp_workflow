@@ -16,7 +16,7 @@ config_version: 1
 # You can use the CLI command `great_expectations add-datasource` to help you
 # add a new datasource. Read more at https://docs.greatexpectations.io/en/latest/features/datasource.html
 datasources:
-  agero_dsa_pandas:
+  org_de_pandas:
     class_name: PandasDatasource
     data_asset_type:
       class_name: PandasDataset
@@ -27,7 +27,7 @@ datasources:
         reader_options:
           sep:
           engine: python
-#  agero_dsa_snowflake:
+#  org_de_snowflake:
 #    class_name: SqlAlchemyDatasource
 #    data_asset_type:
 #      class_name: SqlAlchemyDataset
@@ -114,7 +114,7 @@ stores:
     class_name: ExpectationsStore
     store_backend:
       class_name: FixedLengthTupleS3StoreBackend
-      bucket: agerodsa-data-docs
+      bucket: org-data-docs
       prefix: expectations
   validations_store:
     class_name: ValidationsStore
@@ -125,7 +125,7 @@ stores:
     class_name: ValidationsStore
     store_backend:
       class_name: FixedLengthTupleS3StoreBackend
-      bucket: agerodsa-data-docs
+      bucket: org-data-docs
       prefix: validations/
   evaluation_parameter_store:
     # Evaluation Parameters enable dynamic expectations. Read more here:
@@ -169,7 +169,7 @@ data_docs_sites:
     class_name: SiteBuilder
     store_backend:
       class_name: FixedLengthTupleS3StoreBackend
-      bucket: agerodsa-data-docs
+      bucket: org-data-docs
       prefix: team_site
     site_index_builder:
       class_name: DefaultSiteIndexBuilder
